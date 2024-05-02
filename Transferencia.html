@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferência</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Transferência</h2>
+        <input type="number" id="conta-destino" placeholder="Número da conta de destino" required>
+        <input type="number" id="valor" placeholder="Valor a transferir" required>
+        <button onclick="transferir()">Transferir</button>
+        <button onclick="voltar()">Voltar</button>
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <script src="firebase.js"></script>
+    <script src="transferencia.js"></script>
+</body>
+</html>

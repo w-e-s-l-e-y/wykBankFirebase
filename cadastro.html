@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="number" id="idade" placeholder="Idade" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="number" id="tipo-conta" placeholder="Tipo de Conta" required>
+        <input type="number" id="saldo-inicial" placeholder="Saldo Inicial" required>
+        <button onclick="cadastrar()">Cadastrar</button>
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <script src="firebase.js"></script>
+    <script src="cadastro.js"></script>
+</body>
+</html>
